@@ -39,7 +39,6 @@
     "publish": "npm publish"
   },
   "dependencies": {
-    "@jinghe-sanjiaoroad-app/core": "workspace:*",
     "crypto-js": "^4.0.0"
   },
   "peerDependencies": {

@@ -31,24 +31,20 @@ export default (command, mode) => {
 			},
 		},
 		resolve: {
+			// 确保正确解析 CommonJS 格式的依赖模块，避免在 ESM 环境中的导入错误
 			alias: {
 				'crypto-js': 'crypto-js/index.js',
+				'weixin-js-sdk': 'weixin-js-sdk/index.js'
 			}
 		},
 		optimizeDeps: {
+			// 预构建这些频繁使用的依赖以提高开发服务器性能和热更新速度
 			include: [
-				'weixin-js-sdk',
 				'dayjs',
 				'dayjs/plugin/relativeTime',
 				'dayjs/plugin/duration',
 				'dayjs/locale/zh-cn'
 			],
 		},
-		// build: {
-		// 	commonjsOptions: {
-		// 		// 转换 CommonJS 模块
-		// 		transformMixedEsModules: true
-		// 	}
-		// }
 	};
 };

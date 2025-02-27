@@ -34,17 +34,17 @@
   "scripts": {
     "publish": "npm publish"
   },
-  "peerDependencies": {
-    "vue": "^3.3.0",
-    "pinia": "^2.1.7",
-    "pinia-plugin-persist-uni": "^1.0.0",
+  "dependencies": {
     "dayjs": "^1.11.7",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "luch-request": "^3.0.8",
     "weixin-js-sdk": "^1.6.0"
   },
-  "dependencies": {
-    "luch-request": "^3.0.8",
-    "lodash": "^4.17.21",
-    "lodash-es": "^4.17.21"
+  "peerDependencies": {
+    "pinia": "^2.1.7",
+    "pinia-plugin-persist-uni": "^1.0.0",
+    "vue": "^3.3.0"
   },
   "engines": {
     "node": ">=18.0.0",
