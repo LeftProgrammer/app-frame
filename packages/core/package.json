@@ -1,0 +1,53 @@
+{
+  "name": "@jinghe-sanjiaoroad-app/core",
+  "version": "1.0.0",
+  "description": "App框架核心库，提供基础工具、状态管理和多平台适配。",
+  "keywords": ["uniapp", "core", "framework"],
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.10.110:1080/jinghe/jhdf/sanjiaoroad",
+    "directory": "packages/core"
+  },
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.js"
+    },
+    "./src/*": {
+      "import": "./src/*",
+      "require": "./src/*"
+    }
+  },
+  "files": [
+    "src",
+    "types",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://192.168.10.110:8081/repository/npm-hosted-jinghe/",
+    "directory": "."
+  },
+  "scripts": {
+    "publish": "npm publish"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persist-uni": "^1.0.0",
+    "dayjs": "^1.11.7",
+    "weixin-js-sdk": "^1.6.0"
+  },
+  "dependencies": {
+    "luch-request": "^3.0.8",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

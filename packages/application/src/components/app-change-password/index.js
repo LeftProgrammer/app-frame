@@ -1,0 +1,1 @@
+export { default as AppChangePassword } from './app-change-password.vue';

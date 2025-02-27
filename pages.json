@@ -1,0 +1,151 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^s-(.*)": "@jinghe-sanjiaoroad-app/core/src/components/s-$1/s-$1.vue",
+      "^su-(.*)": "@jinghe-sanjiaoroad-app/core/src/ui/su-$1/su-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/main/index",
+      "aliasPath": "/",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true
+      },
+      "meta": {
+        "sync": true,
+        "title": "首页"
+      }
+    },
+    {
+      "path": "pages/main/user",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "enablePullDownRefresh": true
+      },
+      "meta": {
+        "auth": true,
+        "sync": true,
+        "title": "个人中心"
+      }
+    },
+    {
+      "path": "pages/main/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/main/search",
+      "style": {
+        "navigationBarTitleText": "搜索"
+      },
+      "meta": {
+        "auth": true,
+        "sync": true,
+        "title": "搜索"
+      }
+    },
+    {
+      "path": "pages/main/page",
+      "style": {
+        "navigationBarTitleText": ""
+      },
+      "meta": {
+        "sync": true,
+        "title": "自定义页面"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/public",
+      "pages": [
+        {
+          "path": "setting",
+          "style": {
+            "navigationBarTitleText": "系统设置"
+          },
+          "meta": {
+            "auth": true,
+            "sync": true,
+            "title": "系统设置"
+          }
+        },
+        {
+          "path": "info",
+          "style": {
+            "navigationBarTitleText": "我的信息"
+          },
+          "meta": {
+            "auth": true,
+            "sync": true,
+            "title": "用户信息"
+          }
+        },
+        {
+          "path": "password",
+          "style": {
+            "navigationBarTitleText": "修改密码"
+          },
+          "meta": {
+            "auth": true,
+            "sync": true,
+            "title": "修改密码"
+          }
+        },
+        {
+          "path": "richtext",
+          "style": {
+            "navigationBarTitleText": "富文本"
+          },
+          "meta": {
+            "sync": true,
+            "title": "富文本"
+          }
+        },
+        {
+          "path": "faq",
+          "style": {
+            "navigationBarTitleText": "常见问题"
+          },
+          "meta": {
+            "sync": true,
+            "title": "常见问题"
+          }
+        },
+        {
+          "path": "error",
+          "style": {
+            "navigationBarTitleText": "错误页面"
+          }
+        },
+        {
+          "path": "webview",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "jinghe-sanjiaoroad-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main/index"
+      },
+      {
+        "pagePath": "pages/main/user"
+      }
+    ]
+  }
+}

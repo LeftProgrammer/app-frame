@@ -1,0 +1,24 @@
+# 编辑器和IDE
+.idea/
+.vscode/
+.hbuilderx/
+
+# 构建和依赖
+dist/
+unpackage/
+node_modules/
+packages/*/node_modules/
+packages/core/node_modules/
+packages/application/node_modules/
+
+# 锁定文件
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# 敏感文件
+*.keystore
+*.p12
+*.pfx
+deploy.sh
+.env.local

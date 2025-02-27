@@ -1,0 +1,53 @@
+{
+  "name": "@jinghe-sanjiaoroad-app/application",
+  "version": "1.0.0",
+  "description": "App框架应用层，提供业务组件和页面模块",
+  "keywords": [
+    "uniapp",
+    "business",
+    "components",
+    "mall"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.10.110:1080/jinghe/jhdf/sanjiaoroad",
+    "directory": "packages/application"
+  },
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.js"
+    },
+    "./src/*": {
+      "import": "./src/*",
+      "require": "./src/*"
+    }
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://192.168.10.110:8081/repository/npm-hosted-jinghe/",
+    "directory": "."
+  },
+  "scripts": {
+    "publish": "npm publish"
+  },
+  "dependencies": {
+    "@jinghe-sanjiaoroad-app/core": "workspace:*",
+    "crypto-js": "^4.0.0"
+  },
+  "peerDependencies": {
+    "@jinghe-sanjiaoroad-app/core": "^1.0.0",
+    "vue": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
